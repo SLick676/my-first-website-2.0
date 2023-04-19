@@ -51,6 +51,7 @@
       #my-order{
         background-color: #29C1C4;
         padding: 25px;
+        display: none;
       }
       @media (min width: 50em) {
         .card {
@@ -59,6 +60,10 @@
         header h1 {
           font-size: 5em;
         }
+      }
+      .footer{
+        padding: 30px;
+        background: grey;
       }
     </style>
   </head>
@@ -76,16 +81,31 @@
     <section class="flex-container">
       <h2>SERVICES://</h2>
       <article class="card">
-        <div class="icons "> &#10084</div>
+        <div class="icons "> &#10873</div>
         <h3>David Mukhura </h3>
         <p>Jnr. Web Developer Creates simple, beautiful websites for businesses in Soweto.</p>
         <button> Contact </button>
       </article>
       <article class="card">
-        <div class="icons"> &#10084</div>
-        <h3>David Mukhura </h3>
+        <div class="icons"> &#20584</div>
+        <h3>Jack Russle </h3>
         <p>Jnr. Web Developer Creates simple, beautiful websites for businesses in Soweto.</p>
         <button> Contact </button>
+      </article>
+    </section>
+         <section class="container" style="background color: deeppink;">
+      <h2>OUR TEAM://</h2>
+      <article class="card">
+        <div class="icons "> &#10058</div>
+        <h3>jack jonhson</h3>
+        <p>Front-end Web Developer Creates simple, beautiful websites for businesses in Joburg CBD.</p>
+        <button> Remove </button>
+      </article>
+      <article class="card">
+        <div class="icons"> &#10081</div>
+        <h3>junior jackson </h3>
+        <p>Full stack Web Developer Creates simple, beautiful websites for businesses in Santon.</p>
+        <button> Remove </button>
       </article>
     </section>
     <section>
@@ -130,7 +150,7 @@
             </div>  
     </section>
     <script>
-    function placeOrder(){
+     function placeOrder(){
      var orderForm = document.getElementById("my-form");   
      results = "<h3>Success</h3> Here is your order.";
      results += "<br>Name:" +orderForm.elements["my-name"].value;   
@@ -145,6 +165,29 @@
      orderResults.innerHTML = results;
       }
    </script>
+    <footer>
+       <div class= "footer">
+         <h3>Thanks for visiting.</h3>
+         <div class= container>
+           <article class= "card">
+             <h3>Get in touch.</h3>
+             <p>       Probably the best place to buy     cupcakes in all of Joburg.
+             </p>
+           </article>
+           <article class= "card">
+             <h3>Contact Us:</h3>
+             <p>We would love to hear from you.<br>
+               Call or email us.</br>
+               Mobile: 072345 633 //
+               Tel: 012 343 3432
+               </p>
+               
+           </article>
+           </div>
+         &copy Awesome Industries  Inc.
+         </div>
+     </footer>
   </body>  
+  
   
                    
